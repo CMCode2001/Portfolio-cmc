@@ -17,7 +17,6 @@ function App() {
       <div className="relative">
         <Cursor />
         <Header />
-        <br/>
         <main>
           <Routes>
             <Route

@@ -76,7 +76,7 @@ export function Hero() {
   }, []);
 
   return (
-    <>
+    <div>
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 pt-20 md:pt-0">
       {/* Animated background canvas */}
       <canvas
@@ -90,11 +90,11 @@ export function Hero() {
       <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-magenta-500/20 rounded-full blur-3xl animate-pulse delay-1000"></div>
 
       {/* Content */}
-      <div className="relative z-10 text-center max-w-5xl mx-auto px-6">
+      <div className="relative z-10 text-center max-w-5xl mx-auto px-6 pt-10">
         
 
         {/* Animated badge */}
-        <div className="inline-flex items-center space-x-2 bg-white/10 backdrop-blur-md border border-white/20 rounded-full px-6 py-3 mb-8 group hover:bg-white/20 transition-all duration-300">
+        <div className=" inline-flex items-center space-x-2 bg-white/10 backdrop-blur-md border border-white/20 rounded-full px-6 py-3 mb-8 group hover:bg-white/20 transition-all duration-300">
           <Sparkles className="w-4 h-4 text-cyan-300 animate-spin" />
           <span className="text-white/90 font-medium">Expérience Révolutionnaire</span>
         </div>
@@ -144,6 +144,6 @@ export function Hero() {
       {/* Cinematic overlay */}
       <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-black/30 pointer-events-none"></div>
     </section>
-    </>
+    </div>
   );
 }
