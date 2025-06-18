@@ -198,7 +198,7 @@ export function DesignGallery() {
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                     <div className="absolute bottom-4 left-4 right-4">
                       <p className="text-white/90 text-sm mb-3 line-clamp-2">
-                        {design.description}
+                        {design.category.replace('-', ' ')} 
                       </p>
                       <div className="flex items-center justify-between">
                         <div className="flex items-center space-x-4 text-white/70 text-sm">
@@ -215,7 +215,7 @@ export function DesignGallery() {
                           onClick={() => setSelectedImage(design.id)}
                           className="p-2 bg-white/20 backdrop-blur-md rounded-full hover:bg-white/30 transition-all duration-300"
                         >
-                          <ZoomIn className="w-4 h-4 text-white" />
+                          {/* <ZoomIn className="w-4 h-4 text-white" /> */}
                         </button>
                       </div>
                     </div>
@@ -239,9 +239,9 @@ export function DesignGallery() {
                   </h3>
                   <div className="flex items-center justify-between">
                     <span className="text-sm text-white/60 capitalize">
-                      {design.category.replace('-', ' ')}
+                      {design.description.replace('-', ' ')}
                     </span>
-                    <div className="flex items-center space-x-3 text-white/50 text-sm">
+                    {/* <div className="flex items-center space-x-3 text-white/50 text-sm">
                       <div className="flex items-center space-x-1">
                         <Heart className="w-3 h-3" />
                         <span>{design.likes}</span>
@@ -249,8 +249,8 @@ export function DesignGallery() {
                       <div className="flex items-center space-x-1">
                         <Eye className="w-3 h-3" />
                         <span>{design.views}</span>
-                      </div>
-                    </div>
+                      </div> 
+                    </div>*/}
                   </div>
                 </div>
 
