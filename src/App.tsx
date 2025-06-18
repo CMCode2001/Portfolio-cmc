@@ -9,6 +9,7 @@ import { Contact } from './components/Contact';
 import AllCreationsPage from './components/AllCreationsPage';
 import LogoCMC from './assets/img/CMC-logo .png';
 import { Cursor } from './components/Cursor';
+import ScrollToTop from './components/ScrollToTop';
 
 function App() {
   const date = new Date();
@@ -16,6 +17,7 @@ function App() {
     <Router>
       <div className="relative">
         <Cursor />
+        <ScrollToTop/>
         <Header />
         <main>
           <Routes>
