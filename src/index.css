@@ -179,28 +179,8 @@ html {
 }
 
 /* Hide default cursor */
-/* body {
+body {
   cursor: none;
-} */
-
-
-
-/* Style par défaut : sidebar verticale */
-.sidebar-filtres {
-  display: flex;
-  flex-direction: column;
-  width: 250px;
 }
 
-/* En mode mobile : sidebar horizontale */
-@media (max-width: 768px) {
-  .sidebar-filtres {
-    flex-direction: row;
-    width: 100%;
-    overflow-x: auto;
-  }
-  .sidebar-filtres > * {
-    margin-right: 10px;
-  }
-}
 

@@ -8,16 +8,16 @@ import { Skills } from './components/Skills';
 import { Contact } from './components/Contact';
 import AllCreationsPage from './components/AllCreationsPage';
 import LogoCMC from './assets/img/CMC-logo .png';
-// import { Cursor } from './components/Cursor';
+import { Cursor } from './components/Cursor';
 
 function App() {
   const date = new Date();
   return (
     <Router>
       <div className="relative">
-        {/* <Cursor /> */}
+        <Cursor />
         <Header />
-        
+        <br/>
         <main>
           <Routes>
             <Route
